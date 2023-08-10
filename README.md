@@ -1,2 +1,0 @@
-# md.blogs
-markdown blogs
