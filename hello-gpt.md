@@ -10,9 +10,9 @@ draft: false
 
 从生产力提升的角度来说，我们能大致看出来，越接近机器的，越结构化的内容，他处理得越好。
 
-![1](https://dev.ug/static.blog.dilfish.icu/gptmath1.jpeg)
-![2](https://dev.ug/static.blog.dilfish.icu/gptmath2.png)
-![3](https://dev.ug/static.blog.dilfish.icu/gptmath3.png)
+![1](https://dev.ug/static.blog.dilfish/gptmath1.jpeg)
+![2](https://dev.ug/static.blog.dilfish/gptmath2.png)
+![3](https://dev.ug/static.blog.dilfish/gptmath3.png)
 
 上面的三个题目难度递增，而它把第二题答错了。我的猜测，它能完全理解正方体，左右，朝上，底，面对，后面等概念。这些都是学术上的，相对严格定义的内容。
 

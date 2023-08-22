@@ -95,7 +95,7 @@ func P(str string) {
 
 ### 问题
 此时用 IDE 打开 gomodcrossref 本身功能正常，但是打开 internal/github.com/dilfish/intb/main.go 就有问题了：
-![如图所示](https://dev.ug/static.blog.dilfish.icu/bad.ref.png)
+![如图所示](https://dev.ug/static.blog.dilfish/bad.ref.png)
 internal/github.com/dilfish/inta/main.go 的情况是类似的，当然打开 intc/main.go 文件没有问题。
 
 ### 原因

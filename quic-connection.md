@@ -44,14 +44,14 @@ CRYPTO frame 来发送加密握手, 当前的版本号是 0x00000001，使用 TL
 -  可以保护传输参数，服务端的参数必须加密
 -  应用层协议保护
 
-![simple quic handshake](https://dev.ug/static.blog.dilfish.icu/simple.quic.handshake.png)
+![simple quic handshake](https://dev.ug/static.blog.dilfish/simple.quic.handshake.png)
 带*的地方是可以发送应用数据的地方。
 
-![1rtt quic handshake](https://dev.ug/static.blog.dilfish.icu/1rtt.quic.handshake.png)
+![1rtt quic handshake](https://dev.ug/static.blog.dilfish/1rtt.quic.handshake.png)
 第一个包是 Initial 类型，packet 号是0，包含了一个 CRYPTO frame，内容是 ClientHello.
 多个不同类型的 packet 可以放在一个 UDP 包里面，所以这个握手需要最少4个 UDP 包。
 
-![0rtt quic handshake](https://dev.ug/static.blog.dilfish.icu/0rtt.quic.handshake.png)
+![0rtt quic handshake](https://dev.ug/static.blog.dilfish/0rtt.quic.handshake.png)
 connection ID 是为了保护路由的一致性，long header 包含2个 connection ID，dest connection ID 是接收端选择的，src connection ID 是为了对端设置 dest conntion ID用的.
 
 握手过程中，每个端点都会选择 src connection ID，让对方可以发送给自己数据。在第一个 Initial packet 之后，每个端点再发送数据时都需要设置 dest connection ID。

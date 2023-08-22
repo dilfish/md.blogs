@@ -44,7 +44,7 @@ GOGC 的值代表的是将要运行 gc  之前能申请的内存的值和已经�
 ### memory limit
 go 在 1.19 里面添加了一个 memory limit 的选项，主要是为了适应容器化的部署。
 
-![短暂峰值](https://dev.ug/static.blog.dilfish.icu/transient.peak.png)
+![短暂峰值](https://dev.ug/static.blog.dilfish/transient.peak.png)
 
 上图展示了一个内存的短暂的峰值，如果没有这个峰值，GOOS 应该可以设置比如200，因为通常的 live heap 是 20MB，而总的内存是60MB。但是这个短暂的峰值 live heap 达到了 30MB，所以 GOOS 最多只能设置 100.
 
