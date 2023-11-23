@@ -18,4 +18,7 @@ draft: false
 - 网站用户随缘
 - 亚马逊作为反薅羊毛大户，注意非预期的费用
 - 暂时还用 IPv4，以后可以丢掉 EIP，从服务器角度关闭 IPv4
-- nat64.net 这个服务不行，正常连接500ms，用了之后2000ms
+- nat64.net 这个服务 DNS 速度不行，正常连接500ms，用了之后2000ms
+- telegram 不支持 IPv6
+- https://gitlab.com/fscarmen/warp 用这个项目找了一个出口，入口先不要了
+- 目前 ipv4 和 ipv6 vps 使用 warp 连接在一起
