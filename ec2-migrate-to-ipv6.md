@@ -16,9 +16,10 @@ draft: false
 - 在 /etc/resolv.conf 里面改用 cloudflare + google 的 IPv6 DNS
 - 我自己的网络手机+宽带支持 IPv6，公司还不支持
 - 网站用户随缘
-- 亚马逊作为反薅羊毛大户，注意非预期的费用
+- 亚马逊作为反薅羊毛大户，注意非预期的费用(比如 warp 的 IPv4 是美国 IP，而 ec2 在亚洲，这个流量不免费)
 - 暂时还用 IPv4，以后可以丢掉 EIP，从服务器角度关闭 IPv4
 - nat64.net 这个服务 DNS 速度不行，正常连接500ms，用了之后2000ms
 - telegram 不支持 IPv6
 - https://gitlab.com/fscarmen/warp 用这个项目找了一个出口，入口先不要了
 - 目前 ipv4 和 ipv6 vps 使用 warp 连接在一起
+- [这个链接](https://www.reddit.com/r/aws/comments/17dmdmz/in_regards_to_the_upcoming_ipv4_pricing_update/)指出，免费试用时 IPv4 不收费，所以白折腾了，不过 EIP 比较方便，又给加上了。
