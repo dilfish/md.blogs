@@ -23,3 +23,4 @@ draft: false
 - https://gitlab.com/fscarmen/warp 用这个项目找了一个出口，入口先不要了
 - 目前 ipv4 和 ipv6 vps 使用 warp 连接在一起
 - [这个链接](https://www.reddit.com/r/aws/comments/17dmdmz/in_regards_to_the_upcoming_ipv4_pricing_update/)指出，免费试用时 IPv4 不收费，所以白折腾了，不过 EIP 比较方便，又给加上了。
+- [这个链接](https://www.reddit.com/r/aws/comments/1agm1rf/charges_showing_for_ipv4_address_on_free_tier/)指出，还是收费了，删机了，不折腾了。
