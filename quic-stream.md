@@ -34,7 +34,7 @@ stream ID 和 offset 可以唯一确定一个数据，应用数据打包在 stre
 ### 状态机
 
 发送和接受状态可以由状态机实现。
-![send state machine](https://dev.ug/static.blog.dilfish/send.state.machine.png)
+![send state machine](https://blog.dev.ug/pics/send.state.machine.png)
 新打开的 stream 处于 Ready 状态，此时 quic 可能会缓存住应用的数据。发送 STREAM 或者 STREAM_DATA_BLOCKED frame 之后，stream 进入 Send 状态。被动打开的 stream 收到对端打开 stream 的包之后，进入 Ready 状态。
 
 拥塞控制由接收方控制，最多可以接收 MAX_STREAM_DATA 个 frame。如果发送的数据被拥塞控制算法阻止，则产生一个 STREAM_DATA_BLOCKED stream。
@@ -45,7 +45,7 @@ stream ID 和 offset 可以唯一确定一个数据，应用数据打包在 stre
 
 正常状态（Ready, Sent, Data Sent）时，如果收到一个 STOP_SENDING frame，则会发送 RESET_STREAM frame，然后进入 Reset Sent 状态。当这个 RESET_STREAM frame 被 ACK 之后，则进入 Reset Recvd 状态，这是一个最终的状态。
 
-![recv state machine](https://dev.ug/static.blog.dilfish/recv.state.machine.png)
+![recv state machine](https://blog.dev.ug/pics/recv.state.machine.png)
 
 接收端的初始状态是 Recv，收到 STREAM, STREAM_DATA_BLOCKED, 或者 RESET_STREAM frame 都会创建接收端。双向的 stream 如果收到 MAX_STREAM_DATA 或者 STOP_SENDING frame 也会进入初始状态。
 
