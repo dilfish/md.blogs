@@ -8,7 +8,7 @@ https://m.youtube.com/watch?v=GJODOGq7cAY
 
 https://betterexplained.com/articles/understanding-pythagorean-distance-and-the-gradient/
 
-![如图](https://blog.dev.ug/pics/directional.dr.jpg)
+![如图](https://blog.dev.ug/pics/directional.dr.png)
 
 在上面的推倒和解释中有一个核心因素，就是 x y 两个分量是独立变化的。
 

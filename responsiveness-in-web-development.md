@@ -19,7 +19,7 @@ https://bulma.io/documentation/columns/basics/
 https://www.freecodecamp.org/news/learn-the-bootstrap-4-grid-system-in-10-minutes-e83bfae115da/
 
 ## 问题
-```
+```html
   <!-- Stack the columns on mobile by making one full-width and the other half-width -->
   <div class="row">
     <div class="col-md-8">.col-md-8</div>

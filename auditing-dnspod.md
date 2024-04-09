@@ -14,9 +14,9 @@ draft: false
 
 ### 不同实现
 RFC7871 里面有建议：
-```
+`
 To protect users' privacy, Recursive Resolvers are strongly encouraged to conceal part of the user's IP address by truncating IPv4 addresses to 24 bits. 56 bits are recommended for IPv6, based on [RFC6177].
-```
+`
 
 我测试了下，google 严格遵守了这个建议，腾讯没有遵守，可见隐私国内确实也不值钱。
 

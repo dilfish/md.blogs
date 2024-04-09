@@ -6,9 +6,9 @@ draft: false
 
 本文是阅读[Validating References with Lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)  的笔记。
 
-```
+`
 Lifetime annotations don’t change how long any of the references live. Rather, they describe the relationships of the lifetimes of multiple references to each other without affecting the lifetimes. Just as functions can accept any type when the signature specifies a generic type parameter, functions can accept references with any lifetime by specifying a generic lifetime parameter.
-```
+`
 
 lifetime 这个特性对于 c/c++ 系的程序员是比较好接受的，归根结底就是一句话，指针指向的对象不能提前释放，以免指针解引用失败。
 
