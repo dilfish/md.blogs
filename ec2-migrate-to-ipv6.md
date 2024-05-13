@@ -24,3 +24,4 @@ draft: false
 - 目前 ipv4 和 ipv6 vps 使用 warp 连接在一起
 - [这个链接](https://www.reddit.com/r/aws/comments/17dmdmz/in_regards_to_the_upcoming_ipv4_pricing_update/)指出，免费试用时 IPv4 不收费，所以白折腾了，不过 EIP 比较方便，又给加上了。
 - [这个链接](https://www.reddit.com/r/aws/comments/1agm1rf/charges_showing_for_ipv4_address_on_free_tier/)指出，还是收费了，删机了，不折腾了。
+- [这个链接](https://erect.eu.org/sh/aws.1g.v4.iptables.cmd)和[这个链接](https://erect.eu.org/sh/aws.1g.v6.ip6tables.cmd) 增加了 iptables 工具，防止亚马逊内部流量消耗
