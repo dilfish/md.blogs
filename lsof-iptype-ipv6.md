@@ -6,16 +6,16 @@ draft: false
 
 几天前看到一个问题说，为什么 lsof 显示的 IP 类型是 IPv6 的，例如：
 
-`
-root@gcp:~ # lsof -i:9999                                                                                                                   130 ↵
+```bash
+root@gcp:~ # lsof -i:9999
 COMMAND   PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
 a.out   81466 root    3u  IPv6 805392      0t0  TCP *:9999 (LISTEN)
-`
+```
 
 但是这个接口却可以被 IPv4 客户端连接。
 
-go 语言里面有一个相关的函数叫 net.ListenTCP
-`
+go 语言里面有一个相关的函数叫 net.ListenTCP，里面有个函数选择协议：
+```golang
 // favoriteAddrFamily returns the appropriate address family for the
 // given network, laddr, raddr and mode.
 //
@@ -55,11 +55,13 @@ go 语言里面有一个相关的函数叫 net.ListenTCP
 // Note that the latest DragonFly BSD and OpenBSD kernels allow
 // neither "net.inet6.ip6.v6only=1" change nor IPPROTO_IPV6 level
 // IPV6_V6ONLY socket option setting.
-func favoriteAddrFamily(network string, laddr, raddr sockaddr, mode string) (family int, ipv6only bool) {
-`
+func favoriteAddrFamily(network string, 
+laddr, raddr sockaddr, 
+mode string) (family int, ipv6only bool) {
+```
 
 我写了一个 c 语言程序验证：
-`
+```c
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
@@ -130,6 +132,6 @@ int main()
         }
     }
 }
-`
+```
 
 因此这是一个 linux kernel 支持的功能，细节上我还没研究。
