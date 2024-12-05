@@ -1,6 +1,6 @@
 ---
-title: "DNSPod 降级 IPv6 解析"
-date: 2024-12-06T00:48:39+08:00
+title: "DNSPod 降级 IPv6"
+date: 2024-12-06T00:01:51+08:00
 draft: false
 ---
 
