@@ -20,4 +20,4 @@ draft: false
 
 我的理想也变化了好几次，小时候家里做柜子桌子，我想我要是一个木匠那肯定很好。后来有了收音机电视机，我想我要是修收音机电视机的该多好啊。再后来信息时代来临的时候选择了计算机。总的来说想当个手艺人。或者互联网初期的时候有一句口号：make the world a better place。
 
-2023年读的最有价值的书是 [Rust Atomics and Locks](https://blog.871116.xyz/posts/rust-atomics-and-locks-review/)，另外 chatgpt 和监控方面的内容也有涉猎。但我觉得这俩没意思。2024年说不定没有非双十一的时期了，倒不如抽空多看看以前没看的书。就跟诗里写的一样，叫宜将剩勇追穷寇，不可沽名学霸王。
+2023年读的最有价值的书是 [Rust Atomics and Locks](/posts/rust-atomics-and-locks-review/)，另外 chatgpt 和监控方面的内容也有涉猎。但我觉得这俩没意思。2024年说不定没有非双十一的时期了，倒不如抽空多看看以前没看的书。就跟诗里写的一样，叫宜将剩勇追穷寇，不可沽名学霸王。

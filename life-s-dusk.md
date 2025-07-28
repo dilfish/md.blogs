@@ -9,7 +9,7 @@ draft: false
 
 于是我就在群里说，我这人生是进入到黄昏了。
 
-![life's dust](https://blog.871116.xyz/pics/lifesdust.jpg)
+![life's dust](/pics/lifesdust.jpg)
 
 说这个事还有一个原因，最早的时候我就看过 spacex 技术的一个[技术科普](https://www.zhihu.com/question/597238433/answer/3080541702)。后来有人在群里说，我就想，这个文章我看过，也就没在意。再后来，第三次谈到的时候，我突然对这个内容一片空白，完全不记得了。
 
@@ -29,6 +29,6 @@ draft: false
 #### 下半场
 这个丧的情绪我也说不上来是什么原因，也许是年纪大了，也许是最近几年经济环境不那么好，身体也不那么好。但是另外一个事情又让我觉得多了很多信心。
 
-![one heart](https://blog.871116.xyz/pics/one.heart.jpg)
+![one heart](/pics/one.heart.jpg)
 
 可见随着情况发生变化，一方面要养成新的习惯，使用新的工具，另一方面也是要不忘初心。

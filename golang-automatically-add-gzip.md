@@ -79,7 +79,7 @@ net/http.persistConn.roundTrip
 
 然后就加上了：
 
-![golang http client](https://blog.871116.xyz/pics/golang.http.client.add.gzip.png)
+![golang http client](/pics/golang.http.client.add.gzip.png)
 
 ## 返回 Content-Encoding 消失
 
@@ -89,15 +89,15 @@ net/http.Transport 在初始化时会调用 dialConn 函数，返回一个持久
 里面为每一个 persistConn 分配了一个 go routine 用 readLoop 函数做读操作。
 在这里自动解压，并删除了 Content-Encoding 头:
 
-![golang http client del gzip](https://blog.871116.xyz/pics/golang.client.del.gzip.png)
+![golang http client del gzip](/pics/golang.client.del.gzip.png)
 
 这里 addedGzip 的值，实际上上面的 requestedGzip，也就是说，自动加的 Accept-Encoding，这里会自动解压。
 
 要不要自动加除了用户没设置，不是 Range，不是 HEAD 之外，还有一个控制条件：
 
-![golang disable compress](https://blog.871116.xyz/pics/golang.disable.compress.png)
+![golang disable compress](/pics/golang.disable.compress.png)
 
 我们来试一下，完美：
 
-![golang disable compress code](https://blog.871116.xyz/pics/golang.disable.compress.code.png)
+![golang disable compress code](/pics/golang.disable.compress.code.png)
 
