@@ -17,7 +17,7 @@ kprobe 实现的原理是，传给他一个函数地址，他把对于地址置�
 tracepoint 以及其他静态的追踪功能实现都是在内核的函数里面添加 hooker 函数，再挂上一个用户注册的回调函数。和上述的 kprobe 原理上不同。
 
 ## 完整图
-![图形](https://blog.871116.xyz/pics/bpftrace_probes.png)
+![图形](/pics/bpftrace_probes.png)
 
 ## 参考文章
 1. https://github.com/iovisor/bcc

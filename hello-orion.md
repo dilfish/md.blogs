@@ -7,7 +7,7 @@ draft: false
 
 过年回家时，偶然抬头发现东南方向有一组星星特别亮，就拍了下来。
 
-![猎户座](https://blog.871116.xyz/pics/orion.jpg)
+![猎户座](/pics/orion.jpg)
 
 搜了一下才发现这是猎户座。
 

@@ -22,7 +22,7 @@ draft: false
 
 这个域名使用了亚马逊的解析服务器，但我也懒得深究了。
 
-![它长这样](https://blog.871116.xyz/pics/cloudflare.spam.link.png)
+![它长这样](/pics/cloudflare.spam.link.png)
 
 ### 结论
 

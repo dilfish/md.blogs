@@ -34,4 +34,4 @@ twitter 第一大流派还是福利姬，就是拍照片卖钱的那些人。最
 
 如果审美一样的话，欢迎关注我 @ProactiveEvolut
 
-我的关注列表 [following](https://blog.871116.xyz/pics/following.txt)
+我的关注列表 [following](/pics/following.txt)

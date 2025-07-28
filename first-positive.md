@@ -15,4 +15,4 @@ draft: false
 反而是看了很多似是而非的信息，要搜索，对照，分析，确实挺累。
 
 12月19日抗原阴性以后，我和女儿隔窗相望。
-![隔窗相望](https://blog.871116.xyz/pics/happy.murphy.jpg)
+![隔窗相望](/pics/happy.murphy.jpg)

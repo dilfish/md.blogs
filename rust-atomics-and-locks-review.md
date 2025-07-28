@@ -26,7 +26,7 @@ go 语言只有最后一种类型，所以不需要关心这类问题。
 
 四种内存一致性其实反应了四种不同的硬件指令配置，但是具体反应的问题是什么无法一一对应。
 例如 Release 顺序，应该是 sfence或者干脆 mfence，或者是 store buffer 的写入。这个无法确定。
-![如图](https://blog.871116.xyz/pics/mem.order.jpg)
+![如图](/pics/mem.order.jpg)
 
 ### 参考资料
 这方面参考资料简直太多了：
