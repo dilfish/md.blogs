@@ -28,7 +28,7 @@ root@arm:~ # dig dcard.tw https +short
 可是为什么能看见访问的是 cloudflare-ech.com 呢？我问了下 AI，答案是：
 
 `
-cloudflare-ech.com as a Placeholder: When you visit an ECH-enabled website hosted by Cloudflare, Chrome and other browsers supporting ECH will use cloudflare-ech.com as a generic, unencrypted Server Name Indication (SNI). This outwardly indicates that you're connecting to an encrypted website on Cloudflare, but it doesn't reveal the actual website you're visiting.
+cloudflare-ech.com as a Placeholder: When you visit an ECH-enabled website hosted by Cloudflare, Chrome and other browsers supporting ECH will use cloudflare-ech.com as a generic, unencrypted Server Name Indication (SNI). This outwardly indicates that you're connecting to an encrypted website on Cloudflare, but it doesn't reveal the actual website you're visiting.  
 `
 
 就是说，原来协议的地方空着也不好看，就用 cloudflare-ech.com 当成占位符，实际的域名确实加密了，代理协议或者抓包程序都看不见。
