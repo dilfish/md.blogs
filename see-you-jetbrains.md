@@ -5,10 +5,10 @@ draft: false
 ---
 
 早上打开邮件看新邮件，发现一封 jetbrains 发来的续期邮件。
-![renew email](https://blog.871116.xyz/pics/jet.brains.email.png)
+![renew email](/pics/jet.brains.email.png)
     
 打开一看续期失败了。
-![export control](https://blog.871116.xyz/pics/see.you.jetbrains.png)
+![export control](/pics/see.you.jetbrains.png)
 
 说起来也白嫖了好几年了，有几件趣事记录一下。
 

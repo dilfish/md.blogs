@@ -19,8 +19,8 @@ cloudflare 推出的 ech 协议结合 DNS 的 HTTP 类型，以及 DNS over HTTP
 例如 dcard.tw 的 HTTPS 记录长这样：
 
 ```console
-root@arm:~ # dig dcard.tw https +short  
-1 . alpn="h3,h2" ipv4hint=104.19.247.7,104.19.248.7 ech=AEX+DQBB5QAgACDjock9BDJAAfTxtjI3o215PxkD2hUKHM5YIiEBiKfTEQAEAAEAAQASY2xvdWRmbGFyZS1lY2guY29tAAA= ipv6hint=2606:4700::6813:f707,2606:4700::6813:f807  
+root@arm:~ # dig dcard.tw https +short
+1 . alpn="h3,h2" ipv4hint=104.19.247.7,104.19.248.7 ech=AEX+DQBB5QAgACDjock9BDJAAfTxtjI3o215PxkD2hUKHM5YIiEBiKfTEQAEAAEAAQASY2xvdWRmbGFyZS1lY2guY29tAAA= ipv6hint=2606:4700::6813:f707,2606:4700::6813:f807
 ```
 
 浏览器拿到这个信息之后，就可以用 AEX... 这个信息去加密通信了。

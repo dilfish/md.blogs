@@ -21,4 +21,4 @@ draft: false
 - histogram: 分区间统计
 
 如图：
-![我的 grafana](https://blog.871116.xyz/pics/prom.png)
+![我的 grafana](/pics/prom.png)
