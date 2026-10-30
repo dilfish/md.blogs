@@ -10,7 +10,8 @@ draft: false
 - 在新的 VPC 和 subnet 选择时，不选 IPv4 和 public address，但是 IPv4 CIDR 地址是内部地址可以选(好像也是必选的)
 - 修改完 IPv6 的路由就可以登录进去了
 - EIP 很方便，可以随时选择，随时去掉
-- ipam 要选免费版的，而且要是对应区域的，同时验证了上述 IP 丢掉之后，没有使用 IPv4
+- ipam 要选免费版的，而且要是对应区域的
+- 验证了上述 IP 丢掉之后，没有使用 IPv4
 - ec2 的源还不支持 IPv6，不过可以很方便修改成 archive.ubuntu.com
 - github 这个小垃圾依然不支持 IPv6，去掉 EIP 之后，没法拉代码了
 - 在 /etc/resolv.conf 里面改用 cloudflare + google 的 IPv6 DNS

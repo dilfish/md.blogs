@@ -46,9 +46,9 @@ go 在 1.19 里面添加了一个 memory limit 的选项，主要是为了适应
 
 ![短暂峰值](/pics/transient.peak.png)
 
-上图展示了一个内存的短暂的峰值，如果没有这个峰值，GOOS 应该可以设置比如200，因为通常的 live heap 是 20MB，而总的内存是60MB。但是这个短暂的峰值 live heap 达到了 30MB，所以 GOOS 最多只能设置 100.
+上图展示了一个内存的短暂的峰值，如果没有这个峰值，GOGC 应该可以设置比如200，因为通常的 live heap 是 20MB，而总的内存是60MB。但是这个短暂的峰值 live heap 达到了 30MB，所以 GOGC 最多只能设置 100.
 
-使用全局变量 GOMEMLIMIT 或者 runtime/debug.SetMemoryLimit 可以设置内存的上限。设置了内存上限之后，无论 GOOS 设置多大或者是 off，go gc 不会使用超过限制的内存。但是如果应用程序使用了很多内存，那么代价就是 gc 更频繁地运行。
+使用全局变量 GOMEMLIMIT 或者 runtime/debug.SetMemoryLimit 可以设置内存的上限。设置了内存上限之后，无论 GOGC 设置多大或者是 off，go gc 不会使用超过限制的内存。但是如果应用程序使用了很多内存，那么代价就是 gc 更频繁地运行。
 
 ### Optimization guide
 - inuse_objects—Breaks down the number of objects that are live.

@@ -9,4 +9,4 @@ draft: false
 1. https://towardsdatascience.com/svd-8c2f72e264f
 2. https://www.kalmanfilter.net/default.aspx
 
-整个看下来，结论和推倒能接受，但是还不能深刻的理解，看来还是大学时期做题太少了。
+整个看下来，结论和推导能接受，但是还不能深刻的理解，看来还是大学时期做题太少了。

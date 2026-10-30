@@ -12,7 +12,7 @@ draft: false
 - job: 监控任务，和上面的机器是不同维度的数据，加上时间，就变三维数据了
 - metric: 在 job 下面的细分，具体的监控对象
 - exporter: prometheus 是主动拉取(scrape)监控数据的，被拉取对象叫 exporter，输出数据，一般在 /metrics
-- scrape_interval: 抓取间隔，所以数据结果是离散的点，太快了会不会把服务器打爆了啊..
+- scrape_interval: 抓取间隔，所以数据结果是离散的点，太快了会不会把服务器打爆了啊……
 
 
 ### metrics

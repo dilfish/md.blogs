@@ -34,6 +34,6 @@ fn response(req: Request<()>) -> http::Result<Response<()>> {
 ### 其他
 
 而 collect 的文档是：
-collect() can also create instances of types that are not typical collections. For example, a String can be built from chars, and an iterator of Result<T, E> items can be collected into Result<Collection<T>, E>. See the examples below for more.
+collect() can also create instances of types that are not typical collections. For example, a String can be built from chars, and an iterator of `Result<T, E>` items can be collected into `Result<Collection<T>, E>`. See the examples below for more.
 
 Because collect() is so general, it can cause problems with type inference. As such, collect() is one of the few times you’ll see the syntax affectionately known as the ‘turbofish’: ::<>. This helps the inference algorithm understand specifically which collection you’re trying to collect into.

@@ -8,7 +8,7 @@ draft: false
 最近 facebook 发了 [一个文章](https://engineering.fb.com/2022/07/25/production-engineering/its-time-to-leave-the-leap-second-in-the-past/)，大概意思是说，闰秒给程序员带来了很多麻烦，希望可以取消。
 
 ### 计时类型
-[这个网站](http://www.leapsecond.com/java/gpsclock.htm) 列出了常用的几个计时方式。其中 UTC 是程序界比较常用的。他的秒的时长是按原子钟计时的，但是时间数会和格林威治时间进行校准。而格林威治时间是根据地球的转动情况设置的，所以 UTC 时间并不均匀，有可能加速也有可能减速。闰秒就是按秒调整，其他的方案比如 facebook 的 smearing 就是把这个加速减速给平摊到更长的时间区间内。
+[这个网站](http://www.leapsecond.com/java/gpsclock.htm) 列出了常用的几个计时方式。其中 UTC 是程序界比较常用的。他的秒的时长是按原子钟计时的，但是时间数会和格林尼治时间进行校准。而格林尼治时间是根据地球的转动情况设置的，所以 UTC 时间并不均匀，有可能加速也有可能减速。闰秒就是按秒调整，其他的方案比如 facebook 的 smearing 就是把这个加速减速给平摊到更长的时间区间内。
 
 GPS 和 TAI 的计时是从0开始严格均匀递增，秒的长度是按原子钟，所以没有闰的概念。但是程序界没有普遍使用这两个计时方式。
 

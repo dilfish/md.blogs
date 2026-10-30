@@ -16,7 +16,7 @@ draft: false
 
 fastly 的[这篇文章](https://www.fastly.com/blog/measuring-quic-vs-tcp-computational-efficiency)总结得很全面。
 
-vmess 不层层加密的话，正常下载10m文件消耗11.4m流量，有效数据比还是比较高的。
+vmess 不层层加密的话，正常下载 10MB 文件消耗 11.4MB 流量，有效数据占比还是比较高的。
 
 ------
 update:

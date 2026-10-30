@@ -22,7 +22,7 @@ https://www.cnblogs.com/pinard/p/10791506.html
 参考[分布估计](https://towardsdatascience.com/estimating-distributions-nonparametric-713ccf0647b)
 
 ## 随机变量
-随机变量实际上是一个函数。在表示时，一般使用 X。又如 X(x) 则表示函数 X 的 x 参数。或者 X = 1 则表示函数X的值是1的是时候。
+随机变量实际上是一个函数。在表示时，一般使用 X。又如 X(x) 则表示函数 X 的 x 参数。或者 X = 1 则表示函数X的值是1的时候。
 
 ## 多维度
 维度上升时，计算积在数值上逐渐减少直到0。不同维度的积没有比较的意义。

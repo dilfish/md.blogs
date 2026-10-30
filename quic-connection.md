@@ -5,7 +5,7 @@ draft: false
 ---
 
 ### connection
-connection 是客户端和服务端共享的一个状态。每个 connection 建立的时候都需要握手，通过握手生成一个秘钥，商议上层应用使用的参数，以及本 connection 的参数。0-RTT 是客户端在服务端响应之前就发送数据，服务端也可以在收到最后一个握手信息之前发送信息，但是安全性会降低，这给了应用层一个选择安全性和性能平衡的能力。
+connection 是客户端和服务端共享的一个状态。每个 connection 建立的时候都需要握手，通过握手生成一个密钥，商议上层应用使用的参数，以及本 connection 的参数。0-RTT 是客户端在服务端响应之前就发送数据，服务端也可以在收到最后一个握手信息之前发送信息，但是安全性会降低，这给了应用层一个选择安全性和性能平衡的能力。
 
 每一个 connection 都有一个 connection ID 的集合，其中每一个都可以代表这个 connection. connection ID 由端点独立选择，每个端点选择对端使用的 connection ID.
 
@@ -36,11 +36,11 @@ packet 到 connection 的匹配，如果校验出错那么包会被丢弃。
 CRYPTO frame 来发送加密握手, 当前的版本号是 0x00000001，使用 TLS，详细内容在 rfc9001。
 
 加密握手必须实现几个功能：
-- 验证秘钥交换
+- 验证密钥交换
   - 服务端是必须验证的
   - 客户端是可选验证的
-  - 每个 connection 都产生一个独立的秘钥
-  - 秘钥可以用作0RTT和普通的1RTT包
+  - 每个 connection 都产生一个独立的密钥
+  - 密钥可以用作0RTT和普通的1RTT包
 -  可以保护传输参数，服务端的参数必须加密
 -  应用层协议保护
 
@@ -52,7 +52,7 @@ CRYPTO frame 来发送加密握手, 当前的版本号是 0x00000001，使用 TL
 多个不同类型的 packet 可以放在一个 UDP 包里面，所以这个握手需要最少4个 UDP 包。
 
 ![0rtt quic handshake](/pics/0rtt.quic.handshake.png)
-connection ID 是为了保护路由的一致性，long header 包含2个 connection ID，dest connection ID 是接收端选择的，src connection ID 是为了对端设置 dest conntion ID用的.
+connection ID 是为了保护路由的一致性，long header 包含2个 connection ID，dest connection ID 是接收端选择的，src connection ID 是为了对端设置 dest connection ID用的.
 
 握手过程中，每个端点都会选择 src connection ID，让对方可以发送给自己数据。在第一个 Initial packet 之后，每个端点再发送数据时都需要设置 dest connection ID。
 

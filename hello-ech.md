@@ -11,7 +11,7 @@ draft: false
 
 cloudflare 推出的 ech 协议结合 DNS 的 HTTP 类型，以及 DNS over HTTPS 这几个产品组合，将访问的整个流程都加密了。
 
-我很早都知道这个事情，但是也没动心思学习，前几天抽奖抽到了一个 alice networks 的免费的 v6 vps，可以提供香港，台湾和新加坡的家庭宽带 IP 地址，于是可以访问 dcard 网站了。但是我在做分流的时候一直有问题，根据域名来路由到家庭宽带 IP 一直不成功。将日志打开到 debug 时看到了，访问 dcard.tw 时，实际访问的是 cloudflare-ech.com，怪不得域名匹配不上。看到这个域名我就知道是 chrome 和 cloudflare 联合搞的鬼。
+我很早就知道这个事情，但是也没动心思学习，前几天抽奖抽到了一个 alice networks 的免费的 v6 vps，可以提供香港，台湾和新加坡的家庭宽带 IP 地址，于是可以访问 dcard 网站了。但是我在做分流的时候一直有问题，根据域名来路由到家庭宽带 IP 一直不成功。将日志打开到 debug 时看到了，访问 dcard.tw 时，实际访问的是 cloudflare-ech.com，怪不得域名匹配不上。看到这个域名我就知道是 chrome 和 cloudflare 联合搞的鬼。
 
 #### 协议
 对于 ECH 协议来说，访问流程变成了从 DNS 协议中获取 IP 地址和加密公钥，然后直接加密访问服务器，这时候，中间的 box 就不知道域名的信息了。

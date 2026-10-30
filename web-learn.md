@@ -13,7 +13,7 @@ draft: false
 
 
 ## 纯 html/css/js
-这块首推 [shahowe](https://learn.shayhowe.com/)的教程，比较全面且深入地讲解了 html/css 技术。学完这篇就可以有一个全局的理解，其他的内容可以查看文档得知。
+这块首推 [shayhowe](https://learn.shayhowe.com/)的教程，比较全面且深入地讲解了 html/css 技术。学完这篇就可以有一个全局的理解，其他的内容可以查看文档得知。
 
 我还没有仔细看过原生 js 教程，用的时候基本都是抄代码。这样不太好，总是似懂非懂。最近找到一个挺好的教程。[javascript tutorial](https://javascript.info/)。还是应该整体学习一遍，建立一个框架性的概念。
 

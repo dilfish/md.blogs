@@ -23,7 +23,7 @@ draft: false
 
 其实也没有什么使用方式，通常情况下，客户端连接服务端，服务端的端口是一个常用的端口，例如 80 或者 443，而客户端是随机的大数，例如 10058。
 
-那你找到 TCP 包之后，使用 source port 或者 destination port 是 10058 来过滤，就可以精准定义到该连接，然后在窗口内向两边发送 RST 包即可。
+那你找到 TCP 包之后，使用 source port 或者 destination port 是 10058 来过滤，就可以精准定位到该连接，然后在窗口内向两边发送 RST 包即可。
 
 ## 代码
 
@@ -132,7 +132,7 @@ func (tk *tcpKill) Run() error {
 	defer handle.Close()
 
     // bpf 相关的内容可以参考 https://www.ntop.org/guides/nprobe/bpf_expressions.html
-    // 这里设置 filer 比后面过滤更高效
+    // 这里设置 filter 比后面过滤更高效
 	if len(flag.Args()) > 0 {
 		bpffilter := strings.Join(flag.Args(), " ")
 		fmt.Fprintf(os.Stderr, "Using BPF filter %q\n", bpffilter)

@@ -37,9 +37,9 @@ item.ptr = &item.data;
 ```
 当 item 在内存中移动时，item.ptr 就指向了非预期的内存。
 
-不存在自指情况的类型都自动实现了一个 trait 叫 Unpin。而像上述的类型叫做!Unpin，如果想要安全地使用这些类型，则必须要使用 Pin<T>.
+不存在自指情况的类型都自动实现了一个 trait 叫 Unpin。而像上述的类型叫做!Unpin，如果想要安全地使用这些类型，则必须要使用 `Pin<T>`。
 
-访问 Pin<T> 类型使用的方法叫 projection （投射）：
+访问 `Pin<T>` 类型使用的方法叫 projection （投射）：
 ```rust
 // Putting data into Pin
 pub        fn new          <P: Deref<Target:Unpin>>(pointer: P) -> Pin<P>;

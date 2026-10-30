@@ -8,7 +8,7 @@ draft: false
 
 但我大致看了下相关的介绍文章，deepseek 依然没有原理上的突破，只能说是工程上的优化。
 
-学习也看了不少的文章：
+我也看了不少的文章：
 [科普文1](https://magazine.sebastianraschka.com/p/understanding-reasoning-llms "understanding reasoning llms")
 [科普文2](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/ "What Is ChatGPT Doing … and Why Does It Work?")
 

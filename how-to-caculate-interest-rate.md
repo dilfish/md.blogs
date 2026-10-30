@@ -15,7 +15,7 @@ draft: false
 import numpy_financial as nf
 # money loaned
 moneyList=[-40000]
-# paid back in 18 monthes
+# paid back in 18 months
 for i in range(18):
      moneyList.append(2282.22)
 # monthly rate * 12 = yearly rate

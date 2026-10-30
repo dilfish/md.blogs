@@ -8,7 +8,7 @@ draft: false
 
 responsiveness 意思是可响应性，其含义是在不同尺寸设备上面显示不同的样子。原理是 css 有一个特性叫 media query，可以查询当前显示环境的宽度。
 
-另外一个技术叫做 flaxbox，可以让一个 column 元素，在窄的设备上面堆起来，而在宽的设备上面横排。
+另外一个技术叫做 flexbox，可以让一个 column 元素，在窄的设备上面堆起来，而在宽的设备上面横排。
 
 ## 文档
 可以参考 bootstrap 和 bulma 的文档：

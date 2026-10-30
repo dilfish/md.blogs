@@ -112,7 +112,7 @@ go list -f '{{.Imports}}'
 
 后来又发现一个库是处理这类问题的：[packages](golang.org/x/tools/go/packages)，但我看了一下还挺复杂，而且我也不想花太多时间。
 
-实在没辙，就把项目本身的 go.mod 文件里面的 replace 都给他复制进去，这样的话，inta 和 intb 的 go.mod 文件里会有许多多余的 replace 指令，go mod tidy 也不会去除，但是可以解决 IDE 的问题。如果要精准处理这个问题，可以先生成可用的 go.mod 文件，然后用程序去掉多于的 replace。因为 require 语句在 tidy 之后是没有多余的。
+实在没辙，就把项目本身的 go.mod 文件里面的 replace 都给他复制进去，这样的话，inta 和 intb 的 go.mod 文件里会有许多多余的 replace 指令，go mod tidy 也不会去除，但是可以解决 IDE 的问题。如果要精准处理这个问题，可以先生成可用的 go.mod 文件，然后用程序去掉多余的 replace。因为 require 语句在 tidy 之后是没有多余的。
 
 ### 总结
 这个坑总归还是自己的，正确的解法应该是按照 go 的标准，将 inta/intb 和 intc 分别作为两个 module，这样当 inta/intb 做好依赖管理之后，项目本身就不需要关心维护这个关系。

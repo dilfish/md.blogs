@@ -23,7 +23,7 @@ draft: false
 
 还有两个 Less common sounds，一个是 uh-oh 中间那个停顿。一个是 x ，loch 里这个 ch 的发音，因为不常见，不重要。
 
-另外我老婆给我女儿教的 w 读作达不溜，而我一直以为这是一个山寨的读音，正确的应该是 double u。但是看音标能发现，这是一个结合规则不明确导致的混乱： /'dʌb(ə)ljuː/，你把 /'dʌb/ 切分，那就是达不溜，你把 /'dʌb(ə)l/ 切分，那就是 double u。
+另外我老婆教我女儿把 w 读作达不溜，而我一直以为这是一个山寨的读音，正确的应该是 double u。但是看音标能发现，这是一个结合规则不明确导致的混乱： /'dʌb(ə)ljuː/，你把 /'dʌb/ 切分，那就是达不溜，你把 /'dʌb(ə)l/ 切分，那就是 double u。
 
 另外还有一个类似 dress 这个词的发音，[quora](https://www.quora.com/Whats-the-IPA-description-for-the-explosive-d-in-English-consonant-clusters-like-driver-Is-it-different-from-the-d-in-other-positions) 上面有讨论。
 

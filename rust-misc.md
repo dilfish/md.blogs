@@ -31,7 +31,7 @@ sing_song 的 await 也是必要的，不然 sing_song 不会执行。
 phantomdata 解释最好的文章是这个：
 [why phantomdata](http://troubles.md/why-phantomdata/)
 本文也解释了 subtyping 和 variance 的内容。
-![subtypoing](/pics/variance.png)
+![subtyping](/pics/variance.png)
 当然还有官方的文档：
 [phantom data](https://doc.rust-lang.org/nomicon/phantom-data.html)
 [sub typing](https://doc.rust-lang.org/nomicon/subtyping.html)
@@ -62,8 +62,8 @@ struct Vec<T> {
 
 ![如图](/pics/phantomdata.png)
 
-### infallable
-Infallable 的用处比较简单，就是在 trait 或者参数需求的时候的一个占位符。
+### Infallible
+Infallible 的用处比较简单，就是在 trait 或者参数需求的时候的一个占位符。
 
 ### dyn
 https://doc.rust-lang.org/rust-by-example/trait/dyn.html
